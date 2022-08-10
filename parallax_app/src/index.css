@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    min-width: 100%;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(2, 2, 2, 0.616);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.task {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+}
+
+.task.reminder {
+    border-left: 5px solid green;
+}
+
+.task h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-form {
+    margin-bottom: 40px;
+}
+
+.form-control {
+    margin: 20px 0;
+}
+
+.form-control label {
+    display: block;
+}
+
+.form-control input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+}
+
+.form-control-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control-check label {
+    flex: 1;
+}
+
+.form-control-check input {
+    flex: 2;
+    height: 20px;
+}
+
+.break {
+    min-width: 100%;
+    margin: 30px auto;
+    overflow: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.background {
+    background: url(images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f4f4f4;
+}
+
+.aboutbackground {
+    background: url(images/background.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.parallax1 {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.parallax2 {
+    background-image: url(images/newyork.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.parallax3 {
+    background-image: url(images/london.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.parallax4 {
+    background-image: url(images/hongkong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+
+/*Hex button*/
+
+.hexagon {
+    /* this moves the hex up and down */
+    top: 50%;
+    /* this moves the hex left and right */
+    left: 50%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: rgba(146, 145, 145, 0);
+    /* this changes the shape ... keep it at 10 px for hexagon*/
+    border-radius: 10px;
+    /* height and width change the size of the shape */
+    width: 200px;
+    height: 120px;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 0.4vh solid transparent;
+    background-image: url("images/1line_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: -0.5vh;
+    left: -0.5vh;
+    background-color: rgba(146, 145, 145, 0);
+    background-image: url("images/1line_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Align them in such a way
+        that they form a hexagon */
+
+.hexagon:before {
+    transform: rotate(60deg);
+}
+
+.hexagon:after {
+    transform: rotate(-60deg);
+}
